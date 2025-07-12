@@ -70,7 +70,6 @@ Modify the serial port and baud rate as required in the script.
 
 * [Demo CNC Video 1](https://www.youtube.com/watch?v=S8YVlR_1hlo)
 * [Pen-Lift Mechanism](https://youtu.be/Li_atZt4qUI?si=kLkLP7uPw5nB3DAe)
-* [Weight Optimization Idea](https://youtu.be/og1506q67mo?si=HX_Q6KzTD76h4BOH)
 
 ---
 
