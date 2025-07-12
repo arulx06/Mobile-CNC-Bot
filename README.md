@@ -6,7 +6,7 @@ A lightweight, mobile CNC writing machine built using Arduino, GRBL firmware, Py
 
 ## 📸 Project Demo
 
-![Demo Image](Images/assembled_cnc.jpg)
+![Demo Image](Images/Img-1.jpg)
 
 ---
 
