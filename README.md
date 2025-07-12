@@ -87,12 +87,6 @@ Key Observations:
 
 ---
 
-## 🔐 License
-
-MIT License – feel free to use and modify with credit.
-
----
-
 ## 🤝 Contributing
 
 Have ideas or want to help improve this project? Open a PR or raise an issue!
