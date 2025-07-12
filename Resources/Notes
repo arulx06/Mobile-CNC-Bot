@@ -1,0 +1,54 @@
+# 📒 Project Notes – Mobile CNC Writer
+
+---
+
+## 🔧 Hardware Setup Notes
+
+* **Base Diameter**: 15.8 cm
+* **Power Supply Options Checked**:
+
+  * 15.6V and 33.4V were **not used** due to risk of damaging the motor driver.
+  * Lower voltages (e.g., 3.4V vs 6.7V) showed noticeable speed differences.
+* **Motor Types Used**:
+
+  * N20 DC motors (for X/Y motion)
+  * 28BYJ-48 stepper motor (tested for Z-axis control)
+* **Motor Drivers**:
+
+  * L293D for DC motor control (used previously on 4-wheel platform)
+  * A4988 for stepper motor (on CNC shield)
+
+---
+
+## ⚙️ Control Logic & Observations
+
+* PWM causes speed issues with DC motors; a consistent voltage supply works better.
+* For pen-lifting, reducing mechanical complexity (avoiding metal stands) helped in minimizing weight and improving stability.
+* Using GRBL with LaserGRBL software allows easier G-code testing and visualization.
+
+---
+
+## 🧪 Testing Instructions (Stepper Motor)
+
+1. Connect Arduino Uno to CNC Shield V3.
+2. Install A4988 driver module in correct orientation.
+3. Connect stepper motor to the shield.
+4. Power CNC shield with regulated 12V power supply.
+5. Flash GRBL firmware to Arduino.
+6. Test motion using LaserGRBL or Arduino serial monitor.
+
+---
+
+## 🧠 Key Design Choices
+
+* Opted for omni wheels to allow multi-directional movement.
+* Used a mobile platform instead of a fixed base for portability.
+* Replaced heavy pen-lift components with a lighter solution (see [YouTube video](https://youtu.be/og1506q67mo?si=HX_Q6KzTD76h4BOH)).
+
+---
+
+## ❗ Troubleshooting Log
+
+* ⚠️ **PWM issues**: Avoid using PWM for N20 motors—results in speed fluctuations.
+* ⚠️ **Power mismatches**: Higher voltage power supplies caused risk to L293D—stick to <=12V regulated sources.
+* ✅ **L293D confirmation**: Earlier confusion about L293D was resolved—it does work for N20 motors if current is within limits.
