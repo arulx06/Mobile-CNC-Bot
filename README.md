@@ -42,7 +42,7 @@ A lightweight, mobile CNC writing machine built using Arduino, GRBL firmware, Py
 * A4988 on the shield controls the stepper motor (pen Z-axis).
 * L293D is used for driving N20 DC motors (X/Y movement).
 * Supply 12V to the CNC shield via barrel jack.
-* Follow detailed schematic in [`Hardware/Wiring_Diagram.png`](Hardware/Wiring_Diagram.png).
+* Follow detailed schematic in [`Hardware/Wiring_Diagram.png`](Hardware/).
 
 ---
 
